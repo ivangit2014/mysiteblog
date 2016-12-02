@@ -8,6 +8,11 @@
         </head>
         <body>
             <div class="page-header">
+                <a href="{% url 'blog:post_crear' %}" class="top-menu">
+                    <span class="glyphicon glyphicon-plus"></span>
+                </a>               
+                <a href="{% url 'blog:post_listar' %}" class="top-menu"><span class="glyphicon glyphicon-list-alt"></span>
+                </a>           
                 <h1><a href="/">Django Blog</a></h1>
             </div>
             <div class="content container">
@@ -17,6 +22,6 @@
                     {% endblock %}
                     </div>
                 </div>
-            </div>
+            </div>   
         </body>
     </html>
